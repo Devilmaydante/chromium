@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 LABEL maintainer "MontFerret Team <mont.ferret@gmail.com>"
 LABEL homepage "https://www.montferret.dev/"
@@ -6,7 +6,8 @@ LABEL homepage "https://www.montferret.dev/"
 EXPOSE 9222
 
 # https://omahaproxy.appspot.com/
-ENV REVISION=884014
+# https://chromiumdash.appspot.com/releases?platform=Linux
+ENV REVISION=1097615
 ENV DOWNLOAD_HOST=https://storage.googleapis.com
 
 RUN apt-get update -qqy \
